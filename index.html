@@ -1,0 +1,30 @@
+<html>
+
+<script>
+    function getComputerChoice() {
+        let num = Math.random();
+        if (num < 0.333) {
+            return "rock";
+        } else if (num > 0.667) {
+            return "paper";
+        } else {
+            return "scissors";
+        }
+        }
+    
+    function getHumanChoice() {
+        let choice = prompt("Enter your choice");
+        if (choice.toLowerCase() === "rock") {
+            return "rock";
+        } else if (choice.toLowerCase() === "paper") {
+            return "paper";
+        } else if (choice.toLowerCase() === "scissors" || choice.toLowerCase() === "scissor") {
+            return "scissors";
+        } else {
+            alert("Invalid choice!");
+        }
+    }
+
+</script>
+
+</html>
