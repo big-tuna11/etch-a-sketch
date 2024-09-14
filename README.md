@@ -1,1 +1,1 @@
-# etch-a-sketch
+# rock-paper-scissors
