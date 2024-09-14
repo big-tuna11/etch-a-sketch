@@ -30,9 +30,20 @@
     let computerScore = 0;
 
     function playRound(humanChoice, computerChoice) {
-        
-    }
+        if ((humanChoice === "rock" && computerChoice === "scissors") || (humanChoice === "paper" && computerChoice === "rock") || (humanChoice === "scissors" && computerChoice === "paper")) {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+            humanScore++;
+        } else if ((computerChoice === "rock" && humanChoice === "scissors") || (computerChoice === "paper" && humanChoice === "rock") || (computerChoice === "scissors" && humanChoice === "paper")) {
+            console.log(`You lose! ${humanChoice} loses to ${computerChoice}`);
+            computerScore++;
+        } else {
+            console.log(`It's a tie!`);
+        }
+        }
 
+    playRound(getHumanChoice(), getComputerChoice());
+    console.log(humanScore);
+    console.log(computerScore);
 </script>
 
 </html>
